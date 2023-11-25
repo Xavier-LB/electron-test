@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Hello World!</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <p><b>Current Version:</b> <span id="app-version"></span></p>
+    <p><b>Update avalible:</b> <span id="update-available"></span></p>
+    <p><b>Update Downloaded:</b> <span id="update-downloaded"></span></p>
+    <p>
+      <b>Update error (Ignore "code signature" error):</b>
+      <span id="error-update"></span>
+    </p>
+
+    <button id="update-button">Update</button>
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>

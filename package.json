@@ -1,0 +1,41 @@
+{
+  "name": "electron-quick-start",
+  "version": "0.0.2",
+  "description": "A minimal Electron application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder",
+    "mwl": "electron-builder -mwl"
+  },
+  "repository": "https://github.com/Xavier-LB/electron-test",
+  "publish": {
+    "provider": "github",
+    "owner": "Xavier-LB",
+    "repo": "electron-test",
+    "releaseType": "release"
+  },
+  "build": {
+    "appId": "com.electron.quickstart",
+    "productName": "ElectronTest",
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "target": "default"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "author": "Xavier-LB",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^27.1.0",
+    "electron-builder": "^24.9.1"
+  },
+  "dependencies": {
+    "electron-updater": "^6.1.7"
+  }
+}
